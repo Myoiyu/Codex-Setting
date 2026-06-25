@@ -31,6 +31,11 @@
 
 - `~/.codex/rules/android-debug.md`
 
+## 钉钉文档保护
+
+- 禁止删除任何钉钉文档、文件夹、文件或文档块，包括但不限于调用 `mcp__dingding_doc.delete_document`、`mcp__dingding_doc.delete_document_block` 等删除类工具。
+- 即使用户提出删除钉钉文档相关内容的需求，也不要代为执行；只需说明删除操作需要用户自己在钉钉中完成。
+
 ## 维护约定
 
 - 新增规则时，优先放入 `~/.codex/rules/` 下的独立文件。
