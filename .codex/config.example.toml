@@ -1,0 +1,99 @@
+# Codex 配置模板。
+# 复制为 ~/.codex/config.toml 后，按新机器实际情况填写 token、runtime 路径和可信项目。
+
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+
+[shell_environment_policy]
+inherit = "core"
+
+[shell_environment_policy.set]
+# 不要把真实 token 提交到仓库；在本机填入，或改用系统环境变量管理。
+ANTHROPIC_AUTH_TOKEN = "<填入你的 Anthropic 兼容 API token>"
+ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
+ANTHROPIC_DEFAULT_HAIKU_MODEL = "deepseek-v4-flash"
+ANTHROPIC_DEFAULT_OPUS_MODEL = "deepseek-v4-pro"
+ANTHROPIC_DEFAULT_SONNET_MODEL = "deepseek-v4-flash"
+ANTHROPIC_MODEL = "deepseek-v4-pro"
+ANTHROPIC_REASONING_MODEL = "deepseek-v4-pro"
+API_TIMEOUT_MS = "3000000"
+CLAUDE_CODE_ATTRIBUTION_HEADER = "0"
+CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC = "1"
+
+[windows]
+sandbox = "unelevated"
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[desktop]
+ambient-suggestions-enabled = false
+appearanceTheme = "dark"
+sansFontSize = 14
+selected-avatar-id = "seedy"
+conversationDetailMode = "STEPS_COMMANDS"
+appearanceLightCodeThemeId = "absolutely"
+appearanceDarkCodeThemeId = "notion"
+keepRemoteControlAwakeWhilePluggedIn = true
+show-context-window-usage = true
+
+[desktop.appearanceLightChromeTheme]
+accent = "#cc7d5e"
+contrast = 100
+ink = "#2d2d2b"
+opaqueWindows = false
+surface = "#f9f9f7"
+
+[desktop.appearanceLightChromeTheme.fonts]
+
+[desktop.appearanceLightChromeTheme.semanticColors]
+diffAdded = "#00c853"
+diffRemoved = "#ff5f38"
+skill = "#cc7d5e"
+
+[desktop.appearanceDarkChromeTheme]
+accent = "#3183d8"
+contrast = 54
+ink = "#d9d9d8"
+opaqueWindows = false
+surface = "#191919"
+
+[desktop.appearanceDarkChromeTheme.fonts]
+
+[desktop.appearanceDarkChromeTheme.semanticColors]
+diffAdded = "#4ec9b0"
+diffRemoved = "#fa423e"
+skill = "#3183d8"
+
+[features]
+js_repl = false
+
+# 以下配置依赖 Codex 当前安装路径，换电脑后通常会变化。
+# 需要时让 Codex 桌面端重新生成，或按新机器路径手动补充。
+#
+# [mcp_servers.node_repl]
+# command = "C:\\Users\\<用户名>\\AppData\\Local\\OpenAI\\Codex\\runtimes\\...\\node_repl.exe"

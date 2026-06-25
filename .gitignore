@@ -1,0 +1,37 @@
+.DS_Store
+Thumbs.db
+
+# 本仓库只保存可迁移配置，不保存本机状态、会话、缓存或认证文件。
+.codex/auth.json
+.codex/*.sqlite
+.codex/*.sqlite-shm
+.codex/*.sqlite-wal
+.codex/logs*.sqlite*
+.codex/session_index.jsonl
+.codex/sessions/
+.codex/archived_sessions/
+.codex/cache/
+.codex/tmp/
+.codex/.tmp/
+.codex/attachments/
+.codex/generated_images/
+.codex/computer-use/
+.codex/node_repl/
+.codex/process_manager/
+.codex/browser/
+
+.claude/history.jsonl
+.claude/session-env/
+.claude/sessions/
+.claude/cache/
+.claude/paste-cache/
+.claude/shell-snapshots/
+.claude/projects/
+.claude/backups/
+
+# 本地密钥文件永远不要提交。
+.env
+.env.*
+!.env.example
+auth.json
+settings.local.json

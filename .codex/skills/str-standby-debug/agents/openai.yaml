@@ -1,0 +1,4 @@
+interface:
+  display_name: "STR Standby Debug"
+  short_description: "Diagnose TV STR standby, wake, and wake-after-STR gray/black screen bugs from logs."
+  default_prompt: "Use $str-standby-debug to analyze this TV STR standby/wake issue log."
