@@ -20,15 +20,6 @@ Thumbs.db
 .codex/process_manager/
 .codex/browser/
 
-.claude/history.jsonl
-.claude/session-env/
-.claude/sessions/
-.claude/cache/
-.claude/paste-cache/
-.claude/shell-snapshots/
-.claude/projects/
-.claude/backups/
-
 # 本地密钥文件永远不要提交。
 .env
 .env.*

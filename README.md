@@ -1,6 +1,6 @@
 # Codex Setting
 
-个人 Codex / Claude 配置备份，用于在新项目或新电脑上快速恢复规则入口、规则文件和自定义 skills。
+个人 Codex 配置备份，用于在新项目或新电脑上快速恢复规则入口、规则文件和自定义 skills。
 
 ## 内容
 
@@ -8,9 +8,6 @@
 - `.codex/rules/`：Codex 模块化规则。
 - `.codex/skills/`：自定义 Codex skills，已将本机符号链接展开为普通目录。
 - `.codex/config.example.toml`：脱敏后的 Codex 配置模板。
-- `.claude/CLAUDE.md`：Claude 用户级规则入口。
-- `.claude/rules/`：Claude 模块化规则。
-- `.claude/skills/`：Claude 自定义 skills。
 - `scripts/`：恢复脚本。
 
 ## 恢复到新电脑
